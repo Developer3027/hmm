@@ -1,0 +1,30 @@
+<!--hero-->
+<section id="hero" class="mt-14 w-full min-h-svh bg-zinc-950 bg-no-repeat bg-center bg-cover bg-[url('https://images.unsplash.com/photo-1592805144716-feeccccef5ac?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+  <div class="flex justify-center items-center py-8 px-4 w-full min-h-svh lg:py-16 z-10 bg-gradient-to-br from-orange-400/40 via-teal-950/20 to-gray-500/30 relative">
+    <div class="flex flex-col justify-center items-center lg:w-fit text-center md:mt-44 lg:mt-60 bg-slate-300/50 px-2 py-5 rounded-lg">
+      <% if notice.present? %>
+        <p class="py-2 px-3 bg-black mb-5 text-teal-400 text-base md:text-lg rounded-lg inline-block max-w-sm" id="notice"><%= notice %></p>
+      <% end %>
+      <% if alert.present? %>
+        <p class="py-2 px-3 bg-black mb-5 text-rose-400 text-base md:text-lg rounded-lg inline-block max-w-sm" id="alert"><%= alert %></p>
+      <% end %>
+      <span class="mb-1 text-2xl font-semibold tracking-tight leading-none md:text-2xl lg:text-4xl text-black">
+        Steer your career in the right direction.
+      </span>
+      <div class="flex flex-col justify-center items-center w-11/12">
+        <h1 class="text-3xl font-bold m-0 p-0">TRUCKERJOBS4U</h1>
+      </div>
+      <%= link_to "START YOUR JOURNEY", "#contact", class: "py-6 px-12 mt-6 rounded bg-yellow-300 text-slate-900 hover:bg-yellow-400 cursor-pointer" %>
+    </div>
+  </div>
+</section>
+<!--newsletter-->
+<section id="newsletter" class="w-full bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 z-10">
+    <div class="mx-auto max-w-screen-md sm:text-center">
+      <h2 class="mb-4 text-3xl tracking-tight font-extrabold sm:text-4xl text-yellow-300">Stay up to date with our newsletter</h2>
+      <p class="mx-auto mb-8 max-w-2xl font-light md:mb-12 sm:text-xl text-gray-400">Transportation is changing. Sign up to get the latest news on developments!</p>
+      <%= render "newsletter" %>
+    </div>
+  </div>
+</section>
