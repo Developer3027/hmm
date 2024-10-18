@@ -1,0 +1,29 @@
+<div class="flex flex-col justify-center items-center w-full text-gray-200 bg-slate-900 mt-20 min-h-[calc(100vh-88px)]">
+  <h1 class="font-bold text-4xl">Admin#dashboard</h1>
+  <p>Find me in app/views/admin/dashboard.html.erb</p>
+  <div class="grid grid-cols-2 gap-2 mt-6">
+    <div>
+      <ul>
+        <h2 class="text-xl font-bold">Newsletter</h2>
+        <% @newsletters.each do |news| %>
+          <li class="border border-gray-200 rounded px-2 py-1"><%= news.email %></li>
+        <% end %>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <h2 class="text-xl font-bold">Leads</h2>
+        <% @leads.each do |lead| %>
+          <div class="border border-gray-200 rounded px-2 py-1">
+            <div class="flex">
+              <li class="pe-1"><%= lead.first_name %></li>
+              <li><%= lead.last_name %></li>
+            </div>
+            <li><%= lead.email %></li>
+            <li><%= lead.phone %></li>
+          </div>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
