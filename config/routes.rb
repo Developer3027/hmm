@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'admin/dashboard'
   devise_for :admins, controllers: {
     registrations: "registrations",
   }

@@ -1,24 +1,12 @@
-# README
+# Part 5 Admin Dashboard
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Create a simple admin dashboard to display newsletter and contact information.
 
-Things you may want to cover:
+We will use the newsletter and lead models.
 
-* Ruby version
+Create the admin controller
 
-* System dependencies
+Create the admin dashboard view
 
-* Configuration
+Display the information gathered in the controller, in the view.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
